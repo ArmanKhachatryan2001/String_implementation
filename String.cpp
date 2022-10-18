@@ -61,31 +61,7 @@ private:
 
 int main()
 {
-    //const char* cst = "hello";
-    //string s;
-    //s.append(3, '*');
-    //s.append(cst);
-    string str1;
-    std::cin >> str1;
-    std::cout << str1;
-    //str1 = "BB";
-    //const char* ptr = str1.c_str();
-    //char& f = str1.front();
-    //f = 'p';
-    //char& t = str1.back();
-    //t = 'T';
-    //str1.at(1) = 'p';
-    string str("BBB");
-    std::cout << str << str.size();
-    //str.swap(str1);
-    //str += str1;
-    //string str2 = str + str1;
-    //str2.insert(8, "A");
-    //str2.erase(8);
-    //str2.push_back('a');
-    //str2.pop_back();
-    //std::cout << str2 << " " << str2.size() <<  " " << str2.length();
-}
+}   
 bool operator<=(const string& str, const string& str1)
 {
     if (str.m_size <= str1.m_size) {
@@ -423,5 +399,4 @@ string& string::operator+=(const string& str)
 {
     merge_copy(str.ptr, (m_size + str.m_size)-1);
     return *this;
-
 }
